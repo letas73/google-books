@@ -1,0 +1,170 @@
+.book {
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
+
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 600px;
+    margin-right: 60px;
+    background-color: #f3f2f1;
+  }
+
+  &__img {
+    width: 350px;
+  }
+
+  &__left {
+    padding-top: 20px;
+    padding-right: 15px;
+  }
+
+  &__categories { 
+    margin-bottom: 50px;
+    
+    &-text {
+      font-size: 18px;
+      display: inline-block;
+      margin-bottom: 10px;
+      margin-right: 8px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.15;
+    max-width: 900px;
+    margin-bottom: 20px;
+  }
+
+  &__authors {
+    margin-bottom: 30px;
+    
+    &-text {
+      display: inline-block;
+      font-size: 18px;
+      color: grey;
+      text-decoration: underline;
+      margin-bottom: 8px;
+      margin-right: 8px;
+    }
+  }
+
+  &__descr {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+
+    width: 100%;
+    max-width: 700px;
+    height: 250px;
+    padding: 15px 10px;
+    border: 1px solid grey;
+    overflow-y: auto;
+  }
+}
+
+@media(max-width: 1300px) {
+  .book {
+
+    &__right {
+      height: 500px;
+      margin-right: 40px;
+    }
+    
+    &__img {
+      width: 280px;
+    }
+  }
+}
+
+@media(max-width: 1100px) {
+  .book {
+    flex-direction: column;
+
+    &__right {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+
+    &__left {
+      width: 100%;
+      padding: 0 15px;
+    }
+
+    &__categories {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .book {
+
+    &__right {
+      height: 380px;
+    }
+
+    &__img {
+      width: 230px;
+    }
+
+    &__title {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    &__authors {
+      margin-bottom: 25px;
+    }
+
+    &__descr {
+      font-size: 18px;
+      height: 350px;
+      padding: 10px 5px;
+    }
+  }
+}
+
+@media(max-width: 460px) {
+  .book {
+
+    &__right {
+      height: 350px;
+      margin-bottom: 20px;
+    }
+
+    &__img {
+      width: 200px;
+    }
+
+    &__categories {
+      margin-bottom: 15px;
+
+      &-text {
+        font-size: 16px;
+      }
+    }
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__authors-text {
+      font-size: 16px;
+    }
+
+    &__descr {
+      font-size: 16px;
+    }
+  }
+}
